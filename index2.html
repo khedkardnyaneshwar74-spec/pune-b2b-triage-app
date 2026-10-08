@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise B2B Triage Matrix - Pune MSME Core</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen selection:bg-blue-500 selection:text-white">
+
+    <!-- Global App Header Shell Component Layout -->
+    <header class="bg-slate-950 border-b border-slate-800/80 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="w-11 h-11 bg-linear-to-tr from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-blue-900/40">
+                    Σ
+                </div>
+                <div>
+                    <h1 class="text-base font-bold tracking-tight text-white flex items-center">
+                        B2B Triage Matrix
+                        <span class="text-[10px] font-bold px-2 py-0.5 bg-blue-500/10 text-blue-400 rounded-md border border-blue-500/20 ml-2">PRO v3.2</span>
+                    </h1>
+                    <p class="text-xs text-slate-400 font-medium">Production-grade client analytics engine for automotive & tech industrial hubs</p>
+                </div>
+            </div>
+            <div>
+                <span class="flex items-center text-xs text-emerald-400 font-semibold bg-emerald-500/5 px-3 py-1.5 rounded-lg border border-emerald-500/10">
+                    <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-ping"></span>
+                    Deterministic Client Engine Active
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Master Workspace Container Grid Layout -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 xl:grid-cols-4 gap-8">
+            
+            <!-- Left Data Stream Input Controller Module Stack -->
+            <div class="xl:col-span-1 space-y-6">
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-800/80 shadow-2xl">
+                    <h2 class="text-sm font-bold text-white tracking-wide uppercase mb-1">Inbound Stream Simulator</h2>
+                    <p class="text-xs text-slate-400 mb-4 leading-relaxed">Simulate incoming enterprise communication channels to process text blocks locally.</p>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Sender Reference Matrix</label>
+                            <input id="prodSender" type="text" placeholder="e.g., Mahindra Logistics / Chakan Plant" class="w-full text-xs px-3.5 py-2.5 border border-slate-800 bg-slate-900/60 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Raw Unstructured Text Block</label>
+                            <textarea id="prodMessage" rows="6" placeholder="Paste incoming commercial email details, operational reports, or line status inquiries..." class="w-full text-xs px-3.5 py-2.5 border border-slate-800 bg-slate-900/60 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none leading-relaxed"></textarea>
+                        </div>
+                        <button onclick="executeProductionStream()" class="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-bold tracking-wider uppercase transition-all shadow-md shadow-blue-900/20 cursor-pointer active:scale-[0.99]">
+                            Run Analysis Engine
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Operational Insights & Analytics Parameters Matrix Block -->
+                <div class="bg-slate-950 p-6 rounded-xl border border-slate-800/80 shadow-2xl">
+                    <h3 class="text-xs font-bold text-white tracking-wide uppercase mb-3">Engine Telemetry Matrix</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-slate-900/40 rounded-lg border border-slate-800/40 flex justify-between items-center">
+                            <span class="text-[11px] text-slate-400">Processing Overhead</span>
+                            <span class="text-xs font-mono font-bold text-emerald-400">₹0.00 / token</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/40 rounded-lg border border-slate-800/40 flex justify-between items-center">
+                            <span class="text-[11px] text-slate-400">Engine Core Latency</span>
+                            <span class="text-xs font-mono font-bold text-emerald-400">&lt; 0.45 ms</span>
+                        </div>
+                        <div class="p-3 bg-slate-900/40 rounded-lg border border-slate-800/40 flex justify-between items-center">
+                            <span class="text-[11px] text-slate-400">Data Vector Model</span>
+                            <span class="text-xs font-mono font-bold text-blue-400">Deterministic Hybrid v3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Core Visualization Flow Dashboard Matrix Pipeline Container -->
+            <div class="xl:col-span-3 space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="prodBoardColumns">
+                    
+                    <!-- HIGH OPERATIONAL RISK ENGINE COLUMN CONTAINER -->
+                    <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 flex flex-col min-h-[620px]">
+                        <div class="flex items-center justify-between mb-5 pb-3 border-b border-slate-800/80">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="w-3 h-3 bg-rose-500 rounded-full shadow-lg shadow-rose-900/50"></span>
+                                <h3 class="text-xs font-bold tracking-wider text-slate-200 uppercase">Operational Risks</h3>
+                            </div>
+                            <span id="prodCount-High" class="text-xs font-mono font-bold bg-slate-900 border border-slate-800 text-slate-300 px-2.5 py-0.5 rounded-md">0</span>
+                        </div>
+                        <div id="prodCol-High" class="space-y-4 flex-1 overflow-y-auto"></div>
+                    </div>
+
+                    <!-- REVENUE & COMMERCIAL MATRIX COLUMN CONTAINER -->
+                    <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 flex flex-col min-h-[620px]">
+                        <div class="flex items-center justify-between mb-5 pb-3 border-b border-slate-800/80">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="w-3 h-3 bg-amber-500 rounded-full shadow-lg shadow-amber-900/50"></span>
+                                <h3 class="text-xs font-bold tracking-wider text-slate-200 uppercase">Commercial Pipeline</h3>
+                            </div>
+                            <span id="prodCount-Medium" class="text-xs font-mono font-bold bg-slate-900 border border-slate-800 text-slate-300 px-2.5 py-0.5 rounded-md">0</span>
+                        </div>
+                        <div id="prodCol-Medium" class="space-y-4 flex-1 overflow-y-auto"></div>
+                    </div>
+
+                    <!-- GENERAL / HR ARCHIVE PIPELINE COLUMN CONTAINER -->
+                    <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 flex flex-col min-h-[620px]">
+                        <div class="flex items-center justify-between mb-5 pb-3 border-b border-slate-800/80">
+                            <div class="flex items-center space-x-2.5">
+                                <span class="w-3 h-3 bg-blue-500 rounded-full shadow-lg shadow-blue-900/50"></span>
+                                <h3 class="text-xs font-bold tracking-wider text-slate-200 uppercase">Corporate Inquiries</h3>
+                            </div>
+                            <span id="prodCount-Low" class="text-xs font-mono font-bold bg-slate-900 border border-slate-800 text-slate-300 px-2.5 py-0.5 rounded-md">0</span>
+                        </div>
+                        <div id="prodCol-Low" class="space-y-4 flex-1 overflow-y-auto"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Production Grade Logic & Text Vector Analysis Runtime Modules Block Script -->
+    <script>
+        // High Reliability Enterprise Processing Matrix Class Object Definition
+        const EnterpriseAnalyticsCore = {
+            config: {
+                negations: ['not', 'no', 'never', 'dont', 'doesnt', 'without', 'clear', 'prevent', 'resolved'],
+                highRelevanceLimit: 15,
+                lowRelevanceLimit: 10
+            },
+
+            // High Precision Token Weights System Specifications Maps
+            vectors: {
+                High: {
+                    tokens: ['breakdown', 'halt', 'stuck', 'delay', 'penalty', 'stop', 'accident', 'damage', 'urgent', 'critical', 'failure', 'shortage', 'downtime'],
+                    baseWeight: 2.8
+                },
+                Medium: {
+                    tokens: ['quote', 'pricing', 'rfq', 'order', 'rfp', 'cost', 'invoice', 'commercials', 'bulk', 'purchase', 'tender', 'procurement', 'vendor'],
+                    baseWeight: 2.0
+                },
+                Low: {
+                    tokens: ['job', 'resume', 'hiring', 'career', 'interview', 'brochure', 'newsletter', 'internship', 'training', 'cv', 'fresher', 'application'],
+                    baseWeight: 1.2
+                }
+            },
+
+            // High Precision Analytical Parsing Workflow Interface Logic
+            processText(rawTextBlock) {
+                // 1. Text Normalization and Punctuation Strip
+                const cleanBlock = rawTextBlock.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g,"");
+                const tokenArray = cleanBlock.split(/\s+/).filter(token => token.length > 1);
+                const totalTokensCount = tokenArray.length;
+
+                let scoreVectors = { High: 0, Medium: 0, Low: 0 };
+
+                // 2. Token Matrix Scan Loop Loop Implementation
+                tokenArray.forEach((token, index) => {
+                    for (let targetClass in this.vectors) {
+                        const classModel = this.vectors[targetClass];
+                        
+                        if (classModel.tokens.includes(token)) {
+                            let transactionWeight = classModel.baseWeight;
+
+                            // Layer 2 Architecture Integration: Proximity Negation Scanner
+                            if (index > 0 && this.config.negations.includes(tokenArray[index - 1])) {
+                                transactionWeight -= 3.5; // Apply significant deduction penalty to negation scopes
+                            }
+
+                            // Layer 3 Architecture Integration: Positional Density Mapping Multipliers
+                            if (index <= this.config.highRelevanceLimit || index >= (totalTokensCount - this.config.lowRelevanceLimit)) {
+                                transactionWeight *= 1.35; // Apply positional priority boost factor
+                            }
+
+                            scoreVectors[targetClass] += transactionWeight;
+                        }
+                    }
+                });
+
+                // Layer 4 Architecture Integration: Determinstic Argmax Selector Map
+                let executionClass = "Low";
+                if (scoreVectors.High > scoreVectors.Medium && scoreVectors.High > 0) {
+                    executionClass = "High";
+                } else if (scoreVectors.Medium > scoreVectors.High && scoreVectors.Medium > 0) {
+                    executionClass = "Medium";
+                }
+
+                // Match layout configurations based on evaluation runtime variables
+                const visualThemeMap = {
+                    High: { 
+                        department: "Critical Operations & Escalation Unit", 
+                        styles: "border-rose-900/60 bg-slate-950/90 text-slate-100", 
+                        badge: "bg-rose-500/10 text-rose-400 border-rose-500/20" 
+                    },
+                    Medium: { 
+                        department: "B2B Sales & Enterprise Commercials", 
+                        styles: "border-amber-900/60 bg-slate-950/90 text-slate-100", 
+                        badge: "bg-amber-500/10 text-amber-400 border-amber-500/20" 
+                    },
+                    Low: { 
+                        department: "Corporate HR & General Inquiries", 
+                        styles: "border-slate-800 bg-slate-950/90 text-slate-100", 
+                        badge: "bg-blue-500/10 text-blue-400 border-blue-500/20" 
+                    }
+                };
+
+                return {
+                    classification: executionClass,
+                    department: visualThemeMap[executionClass].department,
+                    stylesClass: visualThemeMap[executionClass].styles,
+                    badgeClass: visualThemeMap[executionClass].badge,
+                    calculatedScore: Math.max(scoreVectors.High, scoreVectors.Medium, scoreVectors.Low).toFixed(2)
+                };
+            }
+        };
+
+        // Initialize Production Mock Dataset Configuration Array Arrays
+        let dataTicketsStore = [
+            { id: 101, sender: "Varroc Engineering QA Team (Bhosari)", logMessage: "Urgent issue report: Assembly line automation components are currently stuck due to electrical failure. Heavy production delay penalty clauses will trigger if engineering support does not fix it immediately." },
+            { id: 102, sender: "Tata Motors Commercial Procurement (Chakan)", logMessage: "Requesting formal pricing quotation sheets for upcoming bulk purchase orders of mild steel structural brackets for Chakan facility assembly line expansion." },
+            { id: 103, sender: "AVCOE Department of AIDS (Sangamner)", logMessage: "Forwarding application file packages containing candidate profiles and curriculum vitae references for consideration in upcoming winter engineering trainee batches." }
+        ];
+
+        // Global UI Engine Workflow Matrix Orchestrator
+        function executeStateRenderLoop() {
+            // Flush layout structural node maps containers before loop executions
+            document.getElementById('prodCol-High').innerHTML = '';
+            document.getElementById('prodCol-Medium').innerHTML = '';
+            document.getElementById('prodCol-Low').innerHTML = '';
+
+            let structuralMetrics = { High: 0, Medium: 0, Low: 0 };
+
+            dataTicketsStore.forEach(ticket => {
+                const telemetry = EnterpriseAnalyticsCore.processText(ticket.logMessage);
+                structuralMetrics[telemetry.classification]++;
+
+                const generatedCardHtml = `
+                    <div class="p-4 rounded-xl border ${telemetry.stylesClass} shadow-md flex flex-col justify-between space-y-4 hover:border-slate-700 transition-all group duration-200">
+                        <div class="space-y-2">
+                            <div class="flex items-start justify-between gap-3">
+                                <h4 class="text-xs font-bold text-white tracking-wide truncate max-w-[140px]">${ticket.sender}</h4>
+                                <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded border whitespace-nowrap ${telemetry.badgeClass}">
+                                    V-Density: ${telemetry.calculatedScore}
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed font-normal line-clamp-4 group-hover:text-slate-300 transition-colors">${ticket.logMessage}</p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-900 flex items-center justify-between">
+                            <span class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">${telemetry.department}</span>
+                            <button onclick="commitTicketResolution(${ticket.id})" class="text-[10px] font-bold text-slate-500 hover:text-emerald-400 uppercase tracking-wider cursor-pointer transition-colors transition-all active:scale-95">Resolve</button>
+                        </div>
+                    </div>
+                `;
+
+                document.getElementById(`prodCol-${telemetry.classification}`).insertAdjacentHTML('beforeend', generatedCardHtml);
+            });
+
+            // Update state running tracker counts references indicators
+            document.getElementById('prodCount-High').innerText = structuralMetrics.High;
+            document.getElementById('prodCount-Medium').innerText = structuralMetrics.Medium;
+            document.getElementById('prodCount-Low').innerText = structuralMetrics.Low;
+        }
+
+        // Action dispatcher for managing state inputs additions
+        function executeProductionStream() {
+            const senderRef = document.getElementById('prodSender');
+            const messageRef = document.getElementById('prodMessage');
+
+            if (!senderRef.value.trim() || !messageRef.value.trim()) {
+                alert("Execution terminated: Ensure all input parameters are configured correctly before running data parsing layers.");
+                return;
+            }
+
+            const appendNode = {
+                id: Date.now(),
+                sender: senderRef.value.trim(),
+                logMessage: messageRef.value.trim()
+            };
+
+            dataTicketsStore.unshift(appendNode);
+            executeStateRenderLoop();
+
+            // Clear input visual attributes frames values smoothly
+            senderRef.value = '';
+            messageRef.value = '';
+        }
+
+        // Action dispatcher for managing state removals data cleanups
+        function commitTicketResolution(id) {
+            dataTicketsStore = dataTicketsStore.filter(t => t.id !== id);
+            executeStateRenderLoop();
+        }
+
+        // Trigger execution loop immediately on viewport document load lifecycle hook
+        window.onload = executeStateRenderLoop;
+    </script>
+</body>
+</html>

@@ -8,7 +8,7 @@
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen selection:bg-blue-500 selection:text-white">
 
-    <!-- Global App Header Shell Component Layout -->
+
     <header class="bg-slate-950 border-b border-slate-800/80 sticky top-0 z-50 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
             <div class="flex items-center space-x-4">
@@ -32,11 +32,11 @@
         </div>
     </header>
 
-    <!-- Master Workspace Container Grid Layout -->
+   
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="grid grid-cols-1 xl:grid-cols-4 gap-8">
             
-            <!-- Left Data Stream Input Controller Module Stack -->
+          
             <div class="xl:col-span-1 space-y-6">
                 <div class="bg-slate-950 p-6 rounded-xl border border-slate-800/80 shadow-2xl">
                     <h2 class="text-sm font-bold text-white tracking-wide uppercase mb-1">Inbound Stream Simulator</h2>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
 
-                <!-- Operational Insights & Analytics Parameters Matrix Block -->
+               
                 <div class="bg-slate-950 p-6 rounded-xl border border-slate-800/80 shadow-2xl">
                     <h3 class="text-xs font-bold text-white tracking-wide uppercase mb-3">Engine Telemetry Matrix</h3>
                     <div class="space-y-3">
@@ -77,11 +77,11 @@
                 </div>
             </div>
 
-            <!-- Right Core Visualization Flow Dashboard Matrix Pipeline Container -->
+         
             <div class="xl:col-span-3 space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="prodBoardColumns">
                     
-                    <!-- HIGH OPERATIONAL RISK ENGINE COLUMN CONTAINER -->
+                
                     <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 flex flex-col min-h-[620px]">
                         <div class="flex items-center justify-between mb-5 pb-3 border-b border-slate-800/80">
                             <div class="flex items-center space-x-2.5">
@@ -93,7 +93,7 @@
                         <div id="prodCol-High" class="space-y-4 flex-1 overflow-y-auto"></div>
                     </div>
 
-                    <!-- REVENUE & COMMERCIAL MATRIX COLUMN CONTAINER -->
+                 
                     <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 flex flex-col min-h-[620px]">
                         <div class="flex items-center justify-between mb-5 pb-3 border-b border-slate-800/80">
                             <div class="flex items-center space-x-2.5">
@@ -105,7 +105,7 @@
                         <div id="prodCol-Medium" class="space-y-4 flex-1 overflow-y-auto"></div>
                     </div>
 
-                    <!-- GENERAL / HR ARCHIVE PIPELINE COLUMN CONTAINER -->
+                 
                     <div class="bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 flex flex-col min-h-[620px]">
                         <div class="flex items-center justify-between mb-5 pb-3 border-b border-slate-800/80">
                             <div class="flex items-center space-x-2.5">
@@ -123,9 +123,9 @@
         </div>
     </main>
 
-    <!-- Production Grade Logic & Text Vector Analysis Runtime Modules Block Script -->
+ 
     <script>
-        // High Reliability Enterprise Processing Matrix Class Object Definition
+      
         const EnterpriseAnalyticsCore = {
             config: {
                 negations: ['not', 'no', 'never', 'dont', 'doesnt', 'without', 'clear', 'prevent', 'resolved'],
@@ -133,7 +133,7 @@
                 lowRelevanceLimit: 10
             },
 
-            // High Precision Token Weights System Specifications Maps
+           
             vectors: {
                 High: {
                     tokens: ['breakdown', 'halt', 'stuck', 'delay', 'penalty', 'stop', 'accident', 'damage', 'urgent', 'critical', 'failure', 'shortage', 'downtime'],
@@ -149,16 +149,16 @@
                 }
             },
 
-            // High Precision Analytical Parsing Workflow Interface Logic
+         
             processText(rawTextBlock) {
-                // 1. Text Normalization and Punctuation Strip
+              
                 const cleanBlock = rawTextBlock.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g,"");
                 const tokenArray = cleanBlock.split(/\s+/).filter(token => token.length > 1);
                 const totalTokensCount = tokenArray.length;
 
                 let scoreVectors = { High: 0, Medium: 0, Low: 0 };
 
-                // 2. Token Matrix Scan Loop Loop Implementation
+            
                 tokenArray.forEach((token, index) => {
                     for (let targetClass in this.vectors) {
                         const classModel = this.vectors[targetClass];
@@ -166,14 +166,14 @@
                         if (classModel.tokens.includes(token)) {
                             let transactionWeight = classModel.baseWeight;
 
-                            // Layer 2 Architecture Integration: Proximity Negation Scanner
+                        
                             if (index > 0 && this.config.negations.includes(tokenArray[index - 1])) {
-                                transactionWeight -= 3.5; // Apply significant deduction penalty to negation scopes
+                                transactionWeight -= 3.5; 
                             }
 
-                            // Layer 3 Architecture Integration: Positional Density Mapping Multipliers
+                        
                             if (index <= this.config.highRelevanceLimit || index >= (totalTokensCount - this.config.lowRelevanceLimit)) {
-                                transactionWeight *= 1.35; // Apply positional priority boost factor
+                                transactionWeight *= 1.35;
                             }
 
                             scoreVectors[targetClass] += transactionWeight;
@@ -181,7 +181,7 @@
                     }
                 });
 
-                // Layer 4 Architecture Integration: Determinstic Argmax Selector Map
+             
                 let executionClass = "Low";
                 if (scoreVectors.High > scoreVectors.Medium && scoreVectors.High > 0) {
                     executionClass = "High";
@@ -189,7 +189,7 @@
                     executionClass = "Medium";
                 }
 
-                // Match layout configurations based on evaluation runtime variables
+            
                 const visualThemeMap = {
                     High: { 
                         department: "Critical Operations & Escalation Unit", 
@@ -218,16 +218,16 @@
             }
         };
 
-        // Initialize Production Mock Dataset Configuration Array Arrays
+        
         let dataTicketsStore = [
             { id: 101, sender: "Varroc Engineering QA Team (Bhosari)", logMessage: "Urgent issue report: Assembly line automation components are currently stuck due to electrical failure. Heavy production delay penalty clauses will trigger if engineering support does not fix it immediately." },
             { id: 102, sender: "Tata Motors Commercial Procurement (Chakan)", logMessage: "Requesting formal pricing quotation sheets for upcoming bulk purchase orders of mild steel structural brackets for Chakan facility assembly line expansion." },
             { id: 103, sender: "AVCOE Department of AIDS (Sangamner)", logMessage: "Forwarding application file packages containing candidate profiles and curriculum vitae references for consideration in upcoming winter engineering trainee batches." }
         ];
 
-        // Global UI Engine Workflow Matrix Orchestrator
+       
         function executeStateRenderLoop() {
-            // Flush layout structural node maps containers before loop executions
+          
             document.getElementById('prodCol-High').innerHTML = '';
             document.getElementById('prodCol-Medium').innerHTML = '';
             document.getElementById('prodCol-Low').innerHTML = '';
@@ -259,13 +259,13 @@
                 document.getElementById(`prodCol-${telemetry.classification}`).insertAdjacentHTML('beforeend', generatedCardHtml);
             });
 
-            // Update state running tracker counts references indicators
+        
             document.getElementById('prodCount-High').innerText = structuralMetrics.High;
             document.getElementById('prodCount-Medium').innerText = structuralMetrics.Medium;
             document.getElementById('prodCount-Low').innerText = structuralMetrics.Low;
         }
 
-        // Action dispatcher for managing state inputs additions
+     
         function executeProductionStream() {
             const senderRef = document.getElementById('prodSender');
             const messageRef = document.getElementById('prodMessage');
@@ -284,18 +284,18 @@
             dataTicketsStore.unshift(appendNode);
             executeStateRenderLoop();
 
-            // Clear input visual attributes frames values smoothly
+        
             senderRef.value = '';
             messageRef.value = '';
         }
 
-        // Action dispatcher for managing state removals data cleanups
+     
         function commitTicketResolution(id) {
             dataTicketsStore = dataTicketsStore.filter(t => t.id !== id);
             executeStateRenderLoop();
         }
 
-        // Trigger execution loop immediately on viewport document load lifecycle hook
+      
         window.onload = executeStateRenderLoop;
     </script>
 </body>
